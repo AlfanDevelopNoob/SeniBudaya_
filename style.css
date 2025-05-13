@@ -1,0 +1,114 @@
+/* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f2e9e4, #c9ada7);
+    color: #3e3e3e;
+    line-height: 1.6;
+    padding: 2rem 2rem 5rem 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+  }
+  h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    color: #4a3f35;
+    text-shadow: 1.5px 1.5px 1px #b0a090;
+  }
+  p.intro {
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #625754;
+  }
+  /* Accordion styles */
+  .accordion {
+    border-radius: 12px;
+    background: #f7f1e1;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.12);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  .accordion-header {
+    background: #bfb1a8;
+    cursor: pointer;
+    padding: 1.25rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #3c2f2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    transition: background 0.3s ease;
+  }
+  .accordion-header:hover {
+    background: #a4938d;
+  }
+  .accordion-header::after {
+    content: "▼";
+    font-size: 1rem;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  .accordion-header.active::after {
+    transform: rotate(-180deg);
+  }
+  .accordion-content {
+    background: #f3e9dd;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 1.5rem;
+    font-size: 1.1rem;
+    color: #514642;
+  }
+  .accordion-content.open {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    max-height: 700px; /* enough for text */
+  }
+  /* Image style */
+  .accordion-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+  }
+  h3{
+    text-align: center;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7a6f6f;
+    margin-top: 3rem;
+    user-select: none;
+  }
+
+  /* Responsive tweak for mobile smaller than 350px or height smaller */
+  @media (max-width: 360px) {
+    body {
+      padding: 1rem 1rem 3rem 1rem;
+      max-width: 100%;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .accordion-header {
+      font-size: 1.1rem;
+      padding: 1rem 1rem;
+    }
+    .accordion-content {
+      font-size: 0.95rem;
+      padding: 1rem 1rem 1.5rem 1rem;
+    }
+  }

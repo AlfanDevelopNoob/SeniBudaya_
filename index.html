@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Sejarah Kerajaan Mataram</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sejarah Kerajaan Mataram Kuno</h1>
+  <p class="intro">Mengenal kerajaan Mataram yang berpengaruh dalam sejarah Nusantara.</p>
+  <img src="/img/candi siluet 1.jpg" alt="">
+  
+  <section class="accordion">
+    <div class="accordion-header">A. Kehidupan Politik</div>
+    <div class="accordion-content">
+      <p>Kerajaan Mataram Kuno didirikan oleh Raja Sanjaya, Kerajaan Mataram Kuno terdesak oleh kekuasaan Dinasti Syailendra. Sehingga terdapat dua kekuasaan Mataram Kuno, Yaitu Dinasti Sanjaya yang beragama Hindu dan Dinasti Syailendra yang beragama Budhha. Meskipun memiliki kepercayaan yang berbeda, masyarakat Mataram Kuno hidup berdampingan secara damai.</p>
+      <img src="/img/kerajaan mataram.jpg" alt="">
+  </section>
+
+  <section class="accordion">
+    <div class="accordion-header">B. Kehidupan Ekonomi</div>
+    <div class="accordion-content">
+      <p>Pusat Kerajaan Mataram Kuno terletak di lembah Sungai Progo, meliputi magelang, Muntilan, Sleman, dan Yogyakarta. Rakyat Mataram Kuno menggantungkan hidupnya pada hasil pertanian. Banyak Kerajaan dan daerah lain saling mengekspor dan mengimpor hasil pertaniannya.
+        Usaha perdanganggan juga mulai mendapat perhatian ketika Raja Balitung berkuasa. Raja memerintahkan untuk membuat pusat-pusat perdanganggan. di sisi lain penduduk di sekitar aliran sungai Bengawan Solo juga di pemerintahkan untuk menjamin kelancaran arus lalu lintas perdanganggan melalui aliran sungai tersebut.
+      </p>
+      <img src="/img/peta mataram.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="accordion">
+    <div class="accordion-header">C. Kehidupan Sosial Budaya</div>
+    <div class="accordion-content">
+      <p>Masyarakat di Kerajaan Mataram Kuno menganut agama Hindu dan Buddha. Mereka hidup rukun dan penuh toleransi. Masyarakat juga telah mengenal bahasa Sansekerta dan huruf Pallawa. 
+        Kerajan Mataram Kuno meninggalkan candi bercorak Hindu dan Buddha. Beberapa candu bercorak Hindu seperti </p>
+        <ol>
+          <li>Candi Bima</li>
+          <li>Candi Arjuna</li>
+          <li>Candi Nakula</li>
+          <li>Candi Prambanan</li>
+          <li>Candi Sewu</li>
+        </ol>
+      <p> Dan masih banyak lagii.</p>
+      <img src="/img/Gambar WhatsApp 2025-05-09 pukul 18.11.04_bb69f805.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="accordion">
+    <div class="accordion-header">D. Runtuhnya Kerajaan Mataram Kuno</div>
+    <div class="accordion-content">
+      <p>Runtuhnya Kerajaan Mataram ada 3 faktor yaitu</p>
+      <ol>
+        <li><h4>Ibu kota yang makin melemah</h4></li>
+        <p>Kemunduran kerajaan Mataram Kuno disebabkan karena kedudukan ibukota kerajaan yang semakin lama semakin lemah dan tidak menguntungkan. Hal tersebut diperburuk dengan munculnya berbagai ancaman dari kerajaan luar, terutama yang berasal dari Kerajaan Sriwijaya.</p>
+        <li><h4>Permusuhan Jawa dan Sumatera</h4></li>
+        <p>Hancurnya Kerajaan Mataram Kuno dipicu permusuhan antara Jawa dan Sumatra yang dimulai saat pengusiran Balaputradewa oleh Rakai Pikatan. Balaputradewa yang kemudian menjadi Raja Sriwijaya menyimpan dendam terhadap Rakai Pikatan.</p>
+        <li><h4>Bencana Alam</h4></li>
+        <p>Faktor utama keruntuhan Kerajaan Mataram Kuno disebabkan oleh bencana alam, berupa meletusnya Gunung Merapi. Sehingga, penerus Raja yang bernama Mpu Sindok mulai memindahkan ibu kota Mataram Kuno ke Jawa Timur. Selain itu, kerajaan ini juga mengubah namanya menjadi Kerajaan Medang.</p>
+      </ol>
+    </div>
+  </section>
+   <h3>Sumber : SindoNews, Kompas.com, Detik.com, Buku Sejarah kelas X</h3>
+  <footer>
+    © 2025 Sejarah Kerajaan Mataram - Made with passion by Amruuu.
+  </footer>
+
+  <script>
+    // Accordion toggle functionality
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const openContent = document.querySelector('.accordion-content.open');
+        if (openContent && openContent.previousElementSibling !== header) {
+          openContent.classList.remove('open');
+          openContent.previousElementSibling.classList.remove('active');
+        }
+        const content = header.nextElementSibling;
+        const isOpen = content.classList.contains('open');
+        if (isOpen) {
+          content.classList.remove('open');
+          header.classList.remove('active');
+        } else {
+          content.classList.add('open');
+          header.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+</content>
+</create_file>
